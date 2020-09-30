@@ -33,4 +33,8 @@ pipeline {
             }
         }
     }
+
+    cleanup {
+        cleanWs()
+    }
 }
