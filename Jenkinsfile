@@ -25,8 +25,10 @@ pipeline {
 
         stage('Code Analysis') {
             steps {
-                script {
-                    sh "echo 'Running Sonar Code Analysis'"
+                withSonarQubeEnv() { // Will pick the global server connection you have configured
+                    sh "echo 'Running Sonar Code Analysis started'"
+                    sh 'npm test'
+                    sh "echo 'Running Sonar Code Analysis finished'"
                 }
             }
         }
