@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh 'ls -lrta'
                 sh 'npm install'
-                sh 'npm run build'
+                sh 'npm test'
                 sh 'ls -lrta'
             }
         }
@@ -27,7 +27,7 @@ pipeline {
             steps {
                 withSonarQubeEnv('NodeJS') {
                     sh "echo 'Running Sonar Code Analysis started'"
-                    sh 'npm test'
+                    sh 'npm run coverage'
                     sh "echo 'Running Sonar Code Analysis finished'"
                 }
             }

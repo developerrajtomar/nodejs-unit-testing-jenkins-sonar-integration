@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "Raj Tomar<developer.rajtomar@gmail.com>",
   "repository": {
-    "url": ""
+    "url": "https://github.com/developerrajtomar/nodejs-unit-testing-jenkins-sonar-integration.git"
   },
   "license": "ISC",
   "devDependencies": {
