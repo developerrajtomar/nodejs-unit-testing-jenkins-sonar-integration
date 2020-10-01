@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-unit-testing",
+  "version": "1.0.0",
+  "description": "NodeJs project for unit test using JEST testing framework.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "Raj Tomar<developer.rajtomar@gmail.com>",
+  "repository": {
+    "url": ""
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.2"
+  }
+}
